@@ -41,6 +41,12 @@ class LinkedList:
         else:
             #print("here")
             return self.inieme_node_recurs(index-1, node.next)
+      
+    def entire_llist(self):
+        string = ""
+        for node in self:
+            string += str(node)
+        return string
 
     def add_after(self, data, new_node):
         if not self.head:
